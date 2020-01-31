@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Butterfly effect</title>
+</head>
+<body id="top">
+  
+  <header>
+    <h1>Butterfly effect</h1>
+    <p>In <em><a href="https://en.wikipedia.org/wiki/Chaos_theory">Chaos Theory</a></em>, the butterfly effect is the sensitive dependence on initial conditions in which a small change in one state of a deterministic nonlinear system can result in large differences in a later state.</p>
+    <p>The term, closely associated with the work of Edward Lorenz, is derived from the metaphorical example of the details of a tornado (the exact time of formation, the exact path taken) being influenced by minor perturbations such as the flapping of the wings of a distant butterfly several weeks earlier. Lorenz discovered the effect when he observed that runs of his weather model with initial condition data that was rounded in a seemingly inconsequential manner would fail to reproduce the results of runs with the unrounded initial condition data. A very small change in initial conditions had created a significantly different outcome.</p>
+    <p>The idea that small causes may have large effects in general and in weather specifically was earlier recognized by French mathematician and engineer Henri Poincaré and American mathematician and philosopher Norbert Wiener. Edward Lorenz's work placed the concept of instability of the Earth's atmosphere onto a quantitative base and linked the concept of instability to the properties of large classes of dynamic systems which are undergoing nonlinear dynamics and deterministic chaos.</p>
+  </header>
+  <img src="Lorenz.png" alt="Lorenz Attractor" width="400">
+  <nav>
+      <ul>
+        <li><a href="#History">History</a></li>
+        <li><a href="#Illustration">Illustration</a></li>
+        <li><a href="#Theory">Theory and mathematical definition</a></li>
+        <li><a href="#physicalsystems">In physical systems</a>
+          <ul>
+            <li><a href="#weather">In weather</a></li>
+            <li><a href="#quantum">In quantum mechanics</a></li>
+          </ul>
+        </li>
+        <li><a href="#Popculture">In popular culture</a></li>
+        <li><a href="#seealso">Further references</a></li>
+      </ul>
+    </nav>
+  <main>
+    <section id="History">
+      <h2>History</h2>
+      <p>Chaos theory and the sensitive dependence on initial conditions were described in the literature in a particular case of the three-body problem by Henri Poincaré in 1890.[4] He later proposed that such phenomena could be common, for example, in meteorology.</p>
+      <p>In 1898, Jacques Hadamard noted general divergence of trajectories in spaces of negative curvature. Pierre Duhem discussed the possible general significance of this in 1908.</p>
+      <p>The idea that the death of one butterfly could eventually have a far-reaching ripple effect on subsequent historical events made its earliest known appearance in "A Sound of Thunder", a 1952 short story by Ray Bradbury about time travel.</p>
+      <p>In 1961, Lorenz was running a numerical computer model to redo a weather prediction from the middle of the previous run as a shortcut. He entered the initial condition 0.506 from the printout instead of entering the full precision 0.506127 value. The result was a completely different weather scenario.</p>
+      <p>Lorenz wrote:</p>
+      <q>At one point I decided to repeat some of the computations in order to examine what was happening in greater detail. I stopped the computer, typed in a line of numbers that it had printed out a while earlier, and set it running again. I went down the hall for a cup of coffee and returned after about an hour, during which time the computer had simulated about two months of weather. The numbers being printed were nothing like the old ones. I immediately suspected a weak vacuum tube or some other computer trouble, which was not uncommon, but before calling for service I decided to see just where the mistake had occurred, knowing that this could speed up the servicing process. Instead of a sudden break, I found that the new values at first repeated the old ones, but soon afterward differed by one and then several units in the last decimal place, and then began to differ in the next to the last place and then in the place before that. In fact, the differences more or less steadily doubled in size every four days or so, until all resemblance with the original output disappeared somewhere in the second month. This was enough to tell me what had happened: the numbers that I had typed in were not the exact original numbers, but were the rounded-off values that had appeared in the original printout. The initial round-off errors were the culprits; they were steadily amplifying until they dominated the solution. (E. N. Lorenz, The Essence of Chaos, U. Washington Press, Seattle (1993), page 134)</q>
+    </section>
+    <section id="Illustration">
+      <h2>Illustration</h2>
+      <p>These figures show two segments of the three-dimensional evolution of two trajectories (one in blue, and the other in yellow) for the same period of time in the Lorenz attractor starting at two initial points that differ by only 10−5 in the x-coordinate. Initially, the two trajectories seem coincident, as indicated by the small difference between the z coordinate of the blue and yellow trajectories, but for t > 23 the difference is as large as the value of the trajectory. The final position of the cones indicates that the two trajectories are no longer coincident at t = 30.</p>
+      <img src="TwoLorenzOrbits.jpg" alt="Lorenz Orbits" width="400">
+    </section>
+    <section id="Theory">
+      <h2>Theory and mathematical definition</h2>
+      <p>Recurrence, the approximate return of a system towards its initial conditions, together with sensitive dependence on initial conditions, are the two main ingredients for chaotic motion. They have the practical consequence of making complex systems, such as the weather, difficult to predict past a certain time range (approximately a week in the case of weather) since it is impossible to measure the starting atmospheric conditions completely accurately.</p>
+      <p>A dynamical system displays sensitive dependence on initial conditions if points arbitrarily close together separate over time at an exponential rate. The definition is not topological, but essentially metrical.</p>
+    </section>
+    <section id="physicalsystems">
+      <h2>In physical systems</h2>
+        <h3 id="weather">In weather</h3>
+          <p>The butterfly effect is most familiar in terms of weather; it can easily be demonstrated in standard weather prediction models, for example. The climate scientists James Annan and William Connolley explain that chaos is important in the development of weather prediction methods; models are sensitive to initial conditions. They add the caveat: "Of course the existence of an unknown butterfly flapping its wings has no direct bearing on weather forecasts, since it will take far too long for such a small perturbation to grow to a significant size, and we have many more immediate uncertainties to worry about. So the direct impact of this phenomenon on weather prediction is often somewhat wrong."</p>
+        <h3 id="quantum">In quantum mechanics</h3>
+          <p>The potential for sensitive dependence on initial conditions (the butterfly effect) has been studied in a number of cases in semiclassical and quantum physics including atoms in strong fields and the anisotropic Kepler problem. Some authors have argued that extreme (exponential) dependence on initial conditions is not expected in pure quantum treatments; however, the sensitive dependence on initial conditions demonstrated in classical motion is included in the semiclassical treatments developed by Martin Gutzwiller and Delos and co-workers.</p>
+          <p>Other authors suggest that the butterfly effect can be observed in quantum systems. Karkuszewski et al. consider the time evolution of quantum systems which have slightly different Hamiltonians. They investigate the level of sensitivity of quantum systems to small changes in their given Hamiltonians. Poulin et al. presented a quantum algorithm to measure fidelity decay, which "measures the rate at which identical initial states diverge when subjected to slightly different dynamics". They consider fidelity decay to be "the closest quantum analog to the (purely classical) butterfly effect". Whereas the classical butterfly effect considers the effect of a small change in the position and/or velocity of an object in a given Hamiltonian system, the quantum butterfly effect considers the effect of a small change in the Hamiltonian system with a given initial position and velocity. This quantum butterfly effect has been demonstrated experimentally. Quantum and semiclassical treatments of system sensitivity to initial conditions are known as quantum chaos.</p>
+    </section>
+    <section>
+      <h2>In popular culture</h2>
+        <p>The journalist Peter Dizikes, writing in The Boston Globe in 2008, notes that popular culture likes the idea of the butterfly effect, but gets it wrong. Whereas Lorenz suggested correctly with his butterfly metaphor that predictability "is inherently limited", popular culture supposes that each event can be explained by finding the small reasons that caused it. Dizikes explains: "It speaks to our larger expectation that the world should be comprehensible – that everything happens for a reason, and that we can pinpoint all those reasons, however small they may be. But nature itself defies this expectation."</p>
+    </section>
+  </main>
+  <footer>
+      <section id="seealso">
+        <h3>Further references</h3>
+        <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Potentiality_and_actuality">Potentiality and actuality</a>
+            <li><a href="https://en.wikipedia.org/wiki/Avalanche_effect">Avalanche effect</a>  
+        </ol>  
+      </section>  
+  <p>Source: Wikipedia</p>
+</footer>
+</body>
