@@ -1,0 +1,49 @@
+body {
+  /* layout */
+  /* positioning */
+  /* style */
+  background-color: #eeeeee; border: green; 
+}
+
+p {
+  /*
+  border: 1px solid red;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: purple;
+  */
+
+  border: 3px solid black; 
+  }
+
+/* 
+classname selector 
+*/
+.big {
+  font-size: 2 em;
+}
+
+.red{
+  color: #720c0c;
+}
+
+/*
+combined selectors
+*/
+
+/*a paragraph with the classname red */
+p.red {
+  color: #0000aa;
+  font-style: italic; 
+}
+ /* an element with a classname red that is a descendent of a paragraph*/
+.red{
+  color: green;
+}
+
+/* an element with a classname red that is a DIRECT descendent of a paragraph*/
+.red{
+  color: pink;
+}
+/*
