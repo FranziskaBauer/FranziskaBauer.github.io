@@ -59,9 +59,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
+  margin-left: 20vw;
+  margin-right: 20vw;
   margin-top: 5vh;
 }
 
@@ -80,6 +80,10 @@ a.main-menu-item-a:hover {
   color: black;
 }
 
+.main-menu:active {
+  color: black;
+}
+
 .main-introtext {
   text-align: left;
   margin-left: 20vw;
@@ -87,10 +91,25 @@ a.main-menu-item-a:hover {
   width: 35vw;
 }
 
-.main-plus {
-padding-top: -20vh;
-
+.main-logo {
+  position: fixed;
+  margin-top: -87px;
+  margin-left: 76.5vw;
+  z-index: 100;
 }
+
+.main-plus-right {
+  position: fixed;
+  margin-left: 6px;
+  margin-top: 0px;
+}
+
+.main-plus-left {
+  position: absolute;
+  margin-left: 17vw;
+  margin-top: -140px;
+}
+
 
 .horizontal {
   position: absolute; 
@@ -106,5 +125,119 @@ padding-top: -20vh;
   width: .1em; 
   height: 3em; 
   top: 1.05em; 
-  left: 1.9em;
+  left: 1.5em;
+}
+
+.main-projects {
+  display: flex;
+  flex-direction: row;
+  min-width: 60vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-projects-images {
+  height: 400px;
+  width: 60vw;
+  overflow: hidden;
+}
+
+.main-projects-juxtaposition {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 60vw;
+  margin-top: 41px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+/* Image position in container */
+
+.main-projects-images-Aogashima-2 {
+  height: 500px;
+  margin-left: -130px;
+  margin-top: -50px;
+}
+
+.main-projects-images-Bodoni-1 {
+  margin-left: -300px;
+  margin-top: -50px;
+}
+
+.main-projects-images-Bodoni-2 {
+  height: 500px;
+  margin-left: -15px;
+  margin-top: -50px;
+}
+
+.main-projects-images-wallclock-1 {
+  height: 450px;
+  margin-left: -15px;
+  margin-top: -20px;
+}
+
+.main-projects-images-wallclock-2 {
+  height: 600px;
+  margin-left: -200px;
+  margin-top: -100px;
+}
+
+
+/* main page image overlay */
+
+.main-projects-overlay {
+  position: relative;
+  text-align: center;
+}
+.main-projects-overlay .main-projects-fadedbox {
+  background-color: black;
+  background-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 400px;
+  height: 400px;
+  padding: 0;
+}
+.main-projects-overlay:hover .main-projects-fadedbox {
+  opacity: 0.5;
+}
+
+.main-projects-overlay .main-projects-fadedbox-text {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+}
+.main-projects-overlay .main-projects-fadedbox-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  opacity: 1;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+
+.main-projects-overlay:hover .main-projects-fadedbox-title,
+.main-projects-overlay:focus .main-projects-fadedbox-title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+.main-projects-fadedbox-text {
+  margin-top: 100px;
+  opacity: 1;
 }
