@@ -54,15 +54,15 @@ body {
 .main-menu {
   font-family: "Brown", Calibre, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: lighter;
-  font-size: 1em;
+  font-size: 1.2em;
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: auto;
-  margin-left: 20vw;
-  margin-right: 20vw;
-  margin-top: 5vh;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .main-menu-item-a {
@@ -91,7 +91,7 @@ a {
 
 .main-introtext {
   text-align: left;
-  margin-left: 20vw;
+  margin-left: 300px;
   margin-top: 10vh;
   width: 35vw;
 }
@@ -99,22 +99,21 @@ a {
 .main-logo {
   position: fixed;
   margin-top: -87px;
-  margin-left: 76.5vw;
+  margin-left: 1270px;
   z-index: 100;
 }
 
 .main-plus-right {
   position: fixed;
-  margin-left: 6px;
+  margin-left: 8px;
   margin-top: 0px;
 }
 
 .main-plus-left {
   position: absolute;
-  margin-left: 17vw;
+  margin-left: 260px;
   margin-top: -140px;
 }
-
 
 .horizontal {
   position: absolute; 
@@ -133,17 +132,8 @@ a {
   left: 1.5em;
 }
 
-.main-projects {
-  display: flex;
-  flex-direction: row;
-  min-width: 60vw;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .main-projects-images {
-  height: 400px;
-  width: 60vw;
+  width: 500px;
   overflow: hidden;
 }
 
@@ -151,7 +141,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-width: 60vw;
+  max-width: 1000px;
+  height: 500px;
   margin-top: 41px;
   margin-right: auto;
   margin-left: auto;
@@ -161,32 +152,33 @@ a {
 /* Image position in container */
 
 .main-projects-images-Aogashima-2 {
-  height: 500px;
+  height: 600px;
   margin-left: -130px;
   margin-top: -50px;
 }
 
 .main-projects-images-Bodoni-1 {
+  height: 600px;
   margin-left: -300px;
   margin-top: -50px;
 }
 
 .main-projects-images-Bodoni-2 {
-  height: 500px;
-  margin-left: -15px;
-  margin-top: -50px;
+  height: 650px;
+  margin-left: -25px;
+  margin-top: -100px;
 }
 
 .main-projects-images-wallclock-1 {
-  height: 460px;
-  margin-left: -15px;
-  margin-top: -25px;
+  height: 600px;
+  margin-left: -50px;
+  margin-top: -30px;
 }
 
 .main-projects-images-wallclock-2 {
   height: 600px;
-  margin-left: -250px;
-  margin-top: -100px;
+  margin-left: -210px;
+  margin-top: -40px;
 }
 
 
@@ -209,8 +201,8 @@ a {
   -ms-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   opacity: 0;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   padding: 0;
 }
 .main-projects-overlay:hover .main-projects-fadedbox {
@@ -256,45 +248,61 @@ a {
 .go-back {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  width: 3vw;
-  margin-top: 5vh;
+  align-items: center;
+  width: 20px;
+  margin-top: 50px;
   font-family: "Frutiger LT Std", sans-serif;
   text-transform: uppercase;
   font-weight: 100;
   color: #949494;
-  font-size: 0.8em;
-  margin-left: 2vw;
+  font-size: 1em;
+  margin-left: 30px;
 }
 
-.arrow {
-  border: solid #949494;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  height: 2vh;
-  padding: 5px;
-  margin: 10px;
-  margin-top: 12px;
+.back {
+  margin: 0;
+  padding-bottom: -10px;
+  padding-top: 3px;
 }
 
 .arrow-left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+  width: 0; 
+  height: 0; 
+  margin-right: 15px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  border-right: 10px solid #949494; 
+  }
+
+.projects-logo {
+  position: fixed;
+  margin-top: -120px;
+  margin-left: 1270px;
+  z-index: 100;
 }
+
+.projects-plus-right {
+  position: fixed;
+  margin-left: 8px;
+  margin-top: 0px;
+}
+
 
 .projects-h2 {
   font-family: Lora;
   font-weight: 100;
-  margin-left: 2vw;
+  margin-left: 30px;
+  margin-top: 40px;
 }
 
 .project-info {
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  width: 18vw;
+  width: 270px;
   font-family: "Frutiger LT Std", sans-serif;
-  font-size: 0.75em;
-  margin-left: 2vw;
+  font-size: 0.9em;
+  margin-left: 30px;
 }
 
 .project-info-title {
