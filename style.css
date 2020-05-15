@@ -4,55 +4,133 @@
 
 body {
   background-color:white;
+  margin: 0;
 }
 
-/* ------------Intropage------------ */
+/* ------------Intropage----------------------------------------------------------------------------- */
 
-.homepage-introtext-logo {
-  margin-top: 35vh;
+a {
+  text-decoration: none;
+}
+
+.homepage-link {
+  text-decoration: none;
+}
+
+.homepage {
   display: grid;
-  grid-template-columns: 8fr 5fr;
-  font-size: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
+}
+
+.homepage-img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  height: 500px;
+  margin-left: auto;
+}
+
+.homepage-img-me {
+  height: 100vh;
 }
 
 .link-into {
-    text-decoration: none;
-    color: black;
-  }
+  position: absolute;
+  text-decoration: none;
+  color: black;
+}
 
 .homepage-introtext {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
   justify-self: end;
+  align-self: end;
   margin: 0;
+  padding-right: 0;
   text-align: right;
   font-size: 1.5em;
-  max-width: 20em;
-  padding-right: 0.5em;
-  font-family: "TheSerif", Georgia, 'Times New Roman', Times, serif;
-  font-weight:100;
+  max-width: 550px;
 }
 
-.homepage-logo {
-  grid-column-start: 2;
-  grid-column-end: 3;
+.homepage-logo-png {
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  justify-self: start;
-  align-self: center;
-  height: 85px;
-  text-align: left; 
+  height: 120px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
-/* -----------Main------------ */
+.homepage-icons {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: end;
+  align-self: center;
+}
+
+.homepage-see-my-work {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: end;
+  align-self: end;
+  font-size: 1.5em;
+  color: black;
+}
+
+.homepage-link {
+  color: black;
+}
+
+.homepage-see-my-work:hover {
+  color: #f92c33;
+  font-style: italic;
+}
+
+.homepage-icons-svg {
+  height: 30px;
+  margin: 15px;
+  color: #f92c33;
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.homepage-icons-svg:hover {
+  fill: #f92c33;
+  -webkit-transition: all 100ms ease-out;
+  -moz-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+  -ms-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  -webkit-filter: drop-shadow(1px 1px 0px #ff193f);
+      filter: drop-shadow(1px 1px 0px #ff193f);
+}
 
 
+/* -----------Main-Design-------------------------------------------------------------------------------- */
 
+.main-menu-item-2, .main-menu-item-3 {
+  display: none;
+}
+
+.wrapper {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
+}
 
 .main-menu {
-  font-family: "Brown", Calibre, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
   font-weight: lighter;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -62,7 +140,10 @@ body {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  list-style: none;
+  padding: 0;
 }
 
 .main-menu-item-a {
@@ -76,30 +157,32 @@ a.main-menu-item-a:hover {
     outline: none;
 }
 
-a {
-  text-decoration: none;
-  outline: none;
-}
-
-.main-menu-item-a-1:active {
-  color: black;
-}
-
-.main-menu:active {
+a:active {
   color: black;
 }
 
 .main-introtext {
   text-align: left;
-  margin-left: 300px;
-  margin-top: 10vh;
-  width: 35vw;
+  margin-left: 60px;
+  margin-top: 100px;
+  width: 700px;
+}
+
+.design-logo {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: start;
+  align-self: center;
+  height: 85px;
+  text-align: left; 
 }
 
 .main-logo {
   position: fixed;
   margin-top: -87px;
-  margin-left: 1270px;
+  margin-left: 1018px;
   z-index: 100;
 }
 
@@ -111,7 +194,7 @@ a {
 
 .main-plus-left {
   position: absolute;
-  margin-left: 260px;
+  margin-left: 20px;
   margin-top: -140px;
 }
 
@@ -181,6 +264,18 @@ a {
   margin-top: -40px;
 }
 
+.main-projects-images-RobinPublishing-1 {
+  height: 600px;
+  margin-left: -80px;
+  margin-top: -70px;
+}
+
+.main-projects-images-RobinPublishing-2 {
+  height: 600px;
+  margin-left: -200px;
+  margin-top: -50px;
+}
+
 
 /* main page image overlay */
 
@@ -220,7 +315,7 @@ a {
 }
 .main-projects-overlay .main-projects-fadedbox-title {
   font-size: 1.5em;
-  font-family: "TheSerif", 'Times New Roman', Times, serif;
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
   opacity: 1;
   transition-delay: 0.2s;
   transition-duration: 0.3s;
@@ -243,7 +338,43 @@ a {
   width: 200px;
 }
 
-/* Project pages */
+
+/*-----footer-Design------*/
+
+.footer {
+  background-color: #eee;
+  padding-top: 35px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  
+}
+
+.footer-copyright {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
+}
+
+
+.footer-icons {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: end;
+}
+
+/* -------------------------------------------Project pages-------------------------------------------*/
 
 .go-back {
   display: grid;
@@ -251,8 +382,7 @@ a {
   align-items: center;
   width: 20px;
   margin-top: 50px;
-  font-family: "Frutiger LT Std", sans-serif;
-  text-transform: uppercase;
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
   font-weight: 100;
   color: #949494;
   font-size: 1em;
@@ -288,23 +418,24 @@ a {
 }
 
 .projects-h2 {
-  font-family: Lora;
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
   font-weight: 100;
   margin-left: 30px;
   margin-top: 40px;
   width: 300px;
-}
+  }
 
 .project-info {
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 250px;
-  font-family: "Frutiger LT Std", sans-serif;
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
   font-size: 0.9em;
   margin-left: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
+  z-index: 1000;
 }
 
 .project-info-title {
@@ -312,7 +443,6 @@ a {
   margin-bottom: 4px;
   padding: 3px;
   border-bottom: 1px solid black;
-  font-weight: bold;
 }
 
 .project-info-text {
@@ -362,7 +492,87 @@ a {
   height: 600px;
 }
 
-.projects-content-container-image-Bodoni-mood {
+/*ROBIN Publishing*/
+
+.projects-content-container-image-RobinPublishing {
   height: 600px;
-  overflow: hidden;
+}
+
+.projects-content-container-image:hover {
+  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+/*---------------------------AboutMe-----------------------------*/
+
+.AboutMe-Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.AboutMe-img {
+  height: 500px;
+  margin-left: 50px;
+  align-self: center;
+}
+
+.AboutMe-text {
+  margin-top: 0;
+  margin-left: 50px;
+  width: 1000px;
+  columns: 2 auto;
+  column-gap: 40px;
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
+  font-size: 1.2em;
+  align-self: end;
+  hyphens: auto;
+}
+
+.AboutMe-text-p1 {
+  margin-block-start: 0;
+}
+
+.AboutMe-CV, .Contact-info {
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
+  margin-left: 50px;
+  font-size: 1.2em;
+}
+
+
+/*------------------------Conatact------------------------------*/
+
+.Contact-Wrapper {
+  max-width: 1100px;
+}
+
+.Contact-img {
+  height: 100vh;
+}
+
+.Contact-go-back {
+  position: absolute;
+  right: 200px;
+  top: 10px;
+}
+
+.Contact-info {
+  position: absolute;
+  width: 600px;
+  left: 850px;
+  top: 400px;
+
+
 }
