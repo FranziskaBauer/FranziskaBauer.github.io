@@ -13,6 +13,13 @@ a {
   text-decoration: none;
 }
 
+a.active-link {
+  color: black;
+  font-weight: 500;
+  border-bottom: solid #f92c33 3px;
+}
+
+
 .homepage-link {
   text-decoration: none;
 }
@@ -21,7 +28,9 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
+  /*font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;*/
+  font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 
 .homepage-img {
@@ -77,6 +86,7 @@ a {
 }
 
 .homepage-see-my-work {
+  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -84,15 +94,18 @@ a {
   justify-self: end;
   align-self: end;
   font-size: 1.5em;
-  color: black;
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 2px;
 }
 
 .homepage-link {
-  color: black;
+  color: white;
 }
 
 .homepage-see-my-work:hover {
-  color: #f92c33;
+  background-color: #f92c33;
   font-style: italic;
 }
 
@@ -166,6 +179,7 @@ a:active {
   margin-left: 60px;
   margin-top: 100px;
   width: 700px;
+  font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
 }
 
 .design-logo {
@@ -418,7 +432,8 @@ a:active {
 }
 
 .projects-h2 {
-  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
+  /*font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;*/
+  font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
   margin-left: 30px;
   margin-top: 40px;
@@ -556,6 +571,10 @@ a:active {
 
 .Contact-Wrapper {
   max-width: 1100px;
+}
+
+.projects-h2-Contact {
+  margin-left: 0;
 }
 
 .Contact-img {
