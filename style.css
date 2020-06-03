@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-red: #f92c33;
+  --main-grey: #A9A9A9;
+}
+
 body {
   background-color:white;
   margin: 0;
@@ -16,54 +21,69 @@ a {
 a.active-link {
   color: black;
   font-weight: 500;
-  border-bottom: solid #f92c33 3px;
+  border-bottom: solid var(--main-red) 3px;
 }
 
 
 .homepage-link {
   text-decoration: none;
+  color: var(--main-grey);
+}
+
+.homepage-link:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .homepage {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  /*font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;*/
-  font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
+  column-gap: 40px;
 }
 
 .homepage-img {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 4;
   height: 500px;
-  margin-left: auto;
+  justify-self: start;
+  align-self: start;
+  justify-content: flex-start
 }
 
 .homepage-img-me {
   height: 100vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .link-into {
+  color: var(--main-grey)
   position: absolute;
   text-decoration: none;
-  color: black;
 }
 
 .homepage-introtext {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  font-family: 'Merriweather', serif;
+  font-weight: 100;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  justify-self: end;
+  justify-self: start;
   align-self: end;
   margin: 0;
   padding-right: 0;
-  text-align: right;
+  text-align: left;
   font-size: 1.5em;
   max-width: 550px;
+}
+
+.homepage-logo {
+  justify-content: flex-end;
 }
 
 .homepage-logo-png {
@@ -71,54 +91,76 @@ a.active-link {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  height: 120px;
-  margin-top: 20px;
-  margin-left: 20px;
+  height: 90px;
+  margin-top: 30px;
+  margin-left: 0;
 }
 
 .homepage-icons {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
-  justify-self: end;
-  align-self: center;
+  justify-self: start;
 }
 
 .homepage-see-my-work {
-  font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  font-family: "Merriweather", serif;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  justify-self: end;
+  justify-self: start;
   align-self: end;
   font-size: 1.5em;
-  color: white;
-  background-color: black;
+  background-color: white;
+  border: 3px solid var(--main-grey);
+  color: var(--main-grey);
   padding: 5px 10px;
   border-radius: 2px;
 }
 
-.homepage-link {
-  color: white;
-}
 
 .homepage-see-my-work:hover {
-  background-color: #f92c33;
+  border-color: black;
+  color: black;
+  -webkit-transition: all 100ms ease-out;
+  -moz-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+  -ms-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  -webkit-filter: drop-shadow(1px 1px 0px #ff193f);
+      filter: drop-shadow(1px 1px 0px #ff193f);
   font-style: italic;
 }
 
+
+.arrow-home {
+  border: solid var(--main-grey);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  margin-right: 3px;
+}
+
+.arrow-home-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
 .homepage-icons-svg {
-  height: 30px;
+  filter: invert(78%) sepia(0%) saturate(1%) hue-rotate(21deg) brightness(89%) contrast(83%);
+  height: 35px;
   margin: 15px;
-  color: #f92c33;
-  margin-right: 0;
-  margin-left: 30px;
+  fill: var(--main-grey);
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-left: 0;
 }
 
 .homepage-icons-svg:hover {
-  fill: #f92c33;
   -webkit-transition: all 100ms ease-out;
   -moz-transition: all 100ms ease-out;
   -o-transition: all 100ms ease-out;
@@ -179,7 +221,7 @@ a:active {
   margin-left: 60px;
   margin-top: 100px;
   width: 700px;
-  font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+  font-family: "Merriweather", Georgia, 'Times New Roman', Times, serif;
 }
 
 .design-logo {
@@ -377,6 +419,7 @@ a:active {
   grid-row-start: 1;
   grid-row-end: 2;
   font-family: "Quicksand", "Century Gothic", "Gill Sans", "Frutiger LT Std", sans-serif;
+  align-self: center;
 }
 
 
